@@ -1,14 +1,27 @@
 use yew::prelude::*;
+use yew_router::{Routable, BrowserRouter, Switch};
+
+use crate::components::home::Home;
 
 #[component]
 pub fn App() -> Html {
     html! {
-        <main>
-            <img class="logo" src="https://yew.rs/img/logo.svg" alt="Yew logo" />
-            <h1>{ "Hello World!" }</h1>
-            <span class="subtitle">{ "from Yew with " }<i class="heart" /></span>
-        </main>
+        <BrowserRouter>
+            <Switch<Route> render = {switch} />
+        </BrowserRouter>
     }
+
 }
 
+#[derive(Routable, PartialEq, Clone)]
+pub enum Route {
+    #[at("/")]
+    Home,
+}
+
+fn switch(routes: Route) -> Html {
+    match routes {
+        Route::Home => html!{<Home />}
+    }
+}
 

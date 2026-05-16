@@ -1,5 +1,6 @@
 mod app;
 
+pub mod components;
 use app::App;
 use tracing_subscriber::{filter::Targets, prelude::*};
 use tracing_web::MakeWebConsoleWriter;
