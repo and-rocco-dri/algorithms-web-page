@@ -3,14 +3,40 @@
     width: 100vw;
 
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-content: center;
+    
+    
 }
+
+.routing-links-container {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    font-family: 'OpenSansRegular', 'sans-serif';
+}
+
+@media (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .routing-links-container {
+        justify-content: left;
+    }
+}
+
 
 .title-container {
     background-color: peru;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    
 }
 
 .title-subcontainer {
@@ -18,15 +44,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-left: 10px;
-    padding-right: 10px;
+   
+    
 }
-.routing-links-container {
-    background-color: cornflowerblue;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
+
 
 .icon-container {
     background-color: gray;
@@ -42,8 +63,42 @@
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+    font-family: 'Contrax', sans-serif;
+    margin-top: 0px;    
+    
 }
 
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('fonts/OpenSansRegular.ttf') format('.ttf');
+    font-weight: 40;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Contrax';
+    src: url('fonts/Contrax.otf') format('opentype');
+    font-weight: 40;
+    font-style: normal;
+}
+
+
+.side-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
 .settings-container {
     background-color: darkorange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.left-padding-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

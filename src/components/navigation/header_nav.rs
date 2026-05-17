@@ -11,23 +11,33 @@ pub fn header_nav() -> Html {
                         <img src="images/icon.svg" width="64" height="64" />
                     </div>
                     <div class="title-text-container">
-                        <h1>{"ALGViewer"}</h1>
+                        <h1 class="title-text">{"ALGOViewer"}</h1>
                     </div>
                 </div>
             </div>
-            <div class="routing-links-container">
-                <div>
-                    <h1>{"Home"}</h1>
+            <div class="side-container">
+                <div class="left-padding-container">
+                    <div style="padding: 32px;"></div>
                 </div>
-                <div>
-                    <h1>{"Algorithms"}</h1>
+                <div class="routing-links-container"> 
+                    <div >
+                        <h3>{"Home"}</h3>
+                    </div>
+                    <div style="padding-left: 16px;">
+                        <h3>{"Algorithms"}</h3>
+                    </div>
+                    <div style="padding-left: 16px;">
+                        <h3>{"About"}</h3>
+                    </div>
+                </div>
+                
+                <div class="settings-container">
+                    <img src="images/settings-icon.svg" width="32" height="32" />
                 </div>
             </div>
 
             
-            <div class="settings-container">
-                <h1>{"Setting"}</h1>
-            </div>
+           
         </div>
     }
 }
