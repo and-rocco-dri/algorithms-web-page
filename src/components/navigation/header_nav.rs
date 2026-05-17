@@ -20,7 +20,7 @@ pub fn header_nav() -> Html {
                     <div style="padding: 32px;"></div>
                 </div>
                 <div class="routing-links-container"> 
-                    <div >
+                    <div class="left-padding-desktop" >
                         <h3>{"Home"}</h3>
                     </div>
                     <div style="padding-left: 16px;">
