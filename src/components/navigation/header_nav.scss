@@ -3,6 +3,47 @@
     width: 100vw;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
+}
+
+.title-container {
+    background-color: peru;
+    display: flex;
+    flex-direction: row;
+}
+
+.title-subcontainer {
+    background-color: darkblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.routing-links-container {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.icon-container {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-text-container {
+    background-color: crimson;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.settings-container {
+    background-color: darkorange;
 }
