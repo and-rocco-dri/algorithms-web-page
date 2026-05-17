@@ -8,7 +8,7 @@ pub struct PageViewProps {
 #[function_component(PageView)]
 pub fn page_view(props: &PageViewProps) -> Html {
     html! {
-        <div>
+        <div class="browser-container ">
             {props.children.clone()}
         </div>
     }
