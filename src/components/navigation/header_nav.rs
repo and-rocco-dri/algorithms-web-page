@@ -4,6 +4,6 @@ use yew::prelude::*;
 
 pub fn header_nav() -> Html {
     html! {
-        <h1>{"Test"}</h1>
+        <div class="container">{"HeaderNav"}</div>
     }
 }
